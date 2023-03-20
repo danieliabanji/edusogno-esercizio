@@ -1,5 +1,120 @@
+/* COMMON */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    background-color: #D9E5F3;
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #134077;
+    margin: 70px 0 20px;
+    z-index: 999;
+}
+
+h2 {
+    text-align: center;
+    color: #134077;
+    margin-bottom: 20px;
+}
+
+/* Header */
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 18px -6px #0057FF;
+    border-radius: 0 0 13px 13px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    padding: 0 0 0 50px;
+    height: 150px;
+    line-height: 200px;
+}
+
+#img-logo {
+    height: 50px;
+}
+
+
+/* REGISTER */
+
+.register {
+    position: absolute;
+    left: calc(50vw - 20vw);
+    width: 40vw;
+    max-height: 60vh;
+    background-color: #FFFFFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    padding: 10px 15px 40px;
+    overflow: auto;
+    z-index: 999;
+    text-align: center;
+}
+
+form.account {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+form.account label {
+    text-align: left;
+}
+
+form.account input {
+    border: none;
+    border-bottom: 1px solid #2D224C;
+    margin: 10px 0 20px 0;
+}
+
+.togglePass {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.togglePass input {
+    width: 100%;
+}
+
+.togglePass i {
+    cursor: pointer;
+    color: #0057FF;
+    margin: 0 10px 15px;
+}
+
+.register input[type=submit] {
+    display: block;
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    background: #0057FF;
+    border-radius: 11px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.log-register {
+    color: #2D224C;
+}
+
+.log-register:hover {
+    color: slategray;
 }
